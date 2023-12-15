@@ -40,6 +40,7 @@ img {
     padding-bottom: 20px;
     color: rgb(239, 152, 30);
     font-size: 25px;
+    flex-wrap: wrap;
 }
 .container__jobs {
     display: flex;
@@ -51,6 +52,7 @@ img {
     padding: 10px;
     background: rgb(106, 189, 241);
     border-bottom: 4px solid rgb(239, 152, 30);
+    flex-wrap: wrap;
 }
 .jobs__style--margin {
     margin-left: 20px;
@@ -69,4 +71,9 @@ img {
     align-items: center;
     font-size: 14px;
     background-color: rgb(30, 151, 199);
+}
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightgreen;
+    }
 }
