@@ -40,7 +40,6 @@ img {
     padding-bottom: 20px;
     color: rgb(239, 152, 30);
     font-size: 25px;
-    flex-wrap: wrap;
 }
 .container__jobs {
     display: flex;
@@ -52,11 +51,7 @@ img {
     padding: 10px;
     background: rgb(106, 189, 241);
     border-bottom: 4px solid rgb(239, 152, 30);
-    flex-wrap: wrap;
-}
-.jobs__style--margin {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 10px;
 }
 .jobs__type {
     padding-top: 30px;
@@ -73,7 +68,10 @@ img {
     background-color: rgb(30, 151, 199);
 }
 @media only screen and (max-width: 600px) {
-    body {
-        background-color: lightgreen;
+    .container__img-bio, .container__jobs {
+        flex-direction: column;
+    }
+    h1 {
+        text-align: center;
     }
 }
